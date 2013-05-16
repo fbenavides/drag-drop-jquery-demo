@@ -41,4 +41,56 @@ body{
 	font-family: OpenSans, Helvetica, Arial, sans-serif;
 }
 
+.container{
+	width: 90%;
+	height: 500px;
+	background-color: #61B0E0;
+	margin: auto;
+	margin-top: 100px;
+	.redondear(5px);
+	box-shadow: 1px 1px 1px #244AAE;
+}
+
+.caja{
+	height: 400px;
+	width: 20%;
+	background-color: #FFFFFF;
+	.redondear(5px);
+	box-shadow: 0px 0px 1px #463674;
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
+.cajita{
+	height: 60px;
+	width: 80%;
+	background-color: #59AAA8;
+	box-shadow: 0px 0px 1px #3F5F85;
+	margin: auto;
+	margin-top: 15px;
+	.redondear(5px);
+	padding: auto;
+	&:active{
+		box-shadow: 0px 0px 3px #3F5F85;
+
+		transform:rotate(1deg);
+		-ms-transform:rotate(1deg); /* IE 9 */
+		-webkit-transform:rotate(1deg); /* Safari and Chrome */
+		-moz-transform:rotate(1deg); /* Firefox */
+	}
+}
+
+.textoCajita{
+	color: #282962;
+}
+
+.hoverDrop{
+	background-color: #3E96CA;
+}
+
+
+
+
 
