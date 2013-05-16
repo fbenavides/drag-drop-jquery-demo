@@ -1,0 +1,44 @@
+
+@colorTop: #7a1a1f;
+@colorBottom: #c40808;
+@colorFondo: #F1F1EF;
+
+@colorHeaderTop: rgba(234,234,234,1);
+@colorHeaderBottom: rgba(195,195,195,1);
+
+@colorLetraSubtitulo: rgba(110,110,110,1);
+
+@colorAzulin: #6262FF;
+@color-celeste: #6C93C1;
+
+.redondear(@radio){
+	-webkit-border-radius: @radio;
+	-moz-border-radius: @radio;
+	border-radius: @radio;
+}
+
+.gradientLineal(@colorArriba, @colorAbajo){
+
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../font/OpenSans-Regular.ttf);
+    font-weight:400;
+}
+
+*{
+	outline:0px; //Evitar que salga el borde amarillo
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	//border: 1px solid red !important;
+}
+
+body{
+	height: 100%;
+	background: @colorFondo;
+	font-family: OpenSans, Helvetica, Arial, sans-serif;
+}
+
+
