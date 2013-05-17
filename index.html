@@ -19,9 +19,16 @@
 			<div class="cajita"><span class="textoCajita">5</span></div>
 		</div>
 		<div class="caja containerB">
-			
+			<div class="cajita"><span class="textoCajita">6</span></div>
+			<div class="cajita"><span class="textoCajita">7</span></div>
+			<div class="cajita"><span class="textoCajita">8</span></div>
+			<div class="cajita"><span class="textoCajita">9</span></div>
+			<div class="cajita"><span class="textoCajita">10</span></div>
 		</div>
+		<div class="caja containerC"></div>
+		<div class="caja containerD"></div>
 	</div>
+	<a id="verInfo" href="#">Ver Informacion</a>
 				
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -34,7 +41,21 @@
 			}).disableSelection();
 
 			$(".caja").droppable({ 
-				hoverClass: "hoverDrop",
+				hoverClass: "hoverDrop"
+			});
+
+			$(".container").sortable({
+				connectWith: ".container"
+			}).disableSelection();
+
+			$("a").on('click', function(){
+				var texto = "";
+				$(".containerA").find(".cajita").each(function (index) {
+					texto += $(this).find("span").text();
+					texto += ", "
+	            });
+	            var textoMostrar = "En el containerA: " + texto
+	            alert(textoMostrar);
 			});
 
 			

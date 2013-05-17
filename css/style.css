@@ -43,6 +43,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 50px;
+  overflow: auto;
 }
 .cajita {
   height: 60px;
@@ -74,4 +75,8 @@ body {
 }
 .hoverDrop {
   background-color: #3E96CA;
+}
+a {
+  margin: auto auto;
+  margin-top: 30px;
 }
