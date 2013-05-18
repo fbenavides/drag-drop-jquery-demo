@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo Drag and Drop</title>
+	<link rel="stylesheet" href="css/normadivze.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body> 
+
+	<div class="container">
+		<div class="nivel nivelDispatcher">
+			<div class="header ui-state-disabled"><span class="textoHeader">Nivel dispatcher</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+			
+		</div>
+		<div class="nivel nivel1">
+			<div class="header ui-state-disabled"><span class="textoHeader">Nivel 1</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+			<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+		</div>
+		<div class="nivel nivel2">
+		<div class="header ui-state-disabled"><span class="textoHeader">Nivel 2</span></div>
+		<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+		<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+		<div class="informes"><span class="textoInformes">Informe: 556521.00 Razon soc: Univers</span></div>
+	</div>
+	</div>
+				
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".nivel").sortable({
+				connectWith: ".nivel",
+				items: "div:not(.ui-state-disabled)"
+			}).disableSelection();
+
+			$(".nivel").droppable({ 
+				hoverClass: "hoverDrop"
+			});
+
+			
+
+			$("a").on('click', function(){
+				var texto = "";
+				$(".containerA").find(".cajita").each(function (index) {
+					texto += $(this).find("span").text();
+					texto += ", "
+	            });
+	            var textoMostrar = "En el containerA: " + texto
+	            alert(textoMostrar);
+			});
+
+			
+		});
+	</script>
+</body>
+
+</html>

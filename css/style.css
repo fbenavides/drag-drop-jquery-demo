@@ -25,7 +25,7 @@ body {
   height: 500px;
   background-color: #61B0E0;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 50px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -79,4 +79,34 @@ body {
 a {
   margin: auto auto;
   margin-top: 30px;
+}
+.nivel {
+  height: 140px;
+  width: 50%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 1px #463674;
+  float: right;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  overflow: auto;
+  border: 1px #272822 solid;
+}
+.informes {
+  height: 20px;
+  width: 99%;
+  background-color: #59AAA8;
+  box-shadow: 0px 0px 1px #3F5F85;
+  margin: auto;
+  margin-top: 5px;
+}
+.header {
+  height: 25px;
+  width: 50%;
+  background-color: red;
+  padding-left: 10px;
+  border: 1px #272822 solid;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
